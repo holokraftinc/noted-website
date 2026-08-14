@@ -82,13 +82,7 @@
           <h4>How to Sign In</h4>
           <p>Steps to sign in with your Google account and get started with Noted.</p>
         </a>
-        <a href="#how-calendar" class="support-card" style="text-decoration:none;cursor:pointer;">
-          <div class="support-card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg>
-          </div>
-          <h4>Sync Google Calendar</h4>
-          <p>Connect your Google Calendar to see events alongside your tasks in Noted.</p>
-        </a>
+        <!-- HIDDEN: Google Calendar support card — restore when feature is publicly available -->
         <a href="#how-notifications" class="support-card" style="text-decoration:none;cursor:pointer;">
           <div class="support-card-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
@@ -182,57 +176,11 @@
         </div>
       </div>
 
-      <!-- Calendar Sync -->
+      <!-- HIDDEN: Google Calendar Sync guide — restore when feature is publicly available
       <div class="card mb-24 fade-in" id="how-calendar" style="padding:36px;">
-        <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
-          <div class="feature-icon" style="margin:0;" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg>
-          </div>
-          <h3 style="margin:0;">How to Sync Google Calendar</h3>
-        </div>
-        <p style="color:var(--text-muted);margin-bottom:20px;">Sync your Google Calendar to see events in the Noted Timeline. This is optional and you can revoke access at any time.</p>
-        <div class="delete-steps">
-          <div class="delete-step">
-            <div class="delete-step-num">1</div>
-            <div class="delete-step-content">
-              <h4>Open Settings in Noted</h4>
-              <p>Tap the profile icon or menu icon at the top of the Noted home screen, then tap "Settings".</p>
-            </div>
-          </div>
-          <div class="delete-step">
-            <div class="delete-step-num">2</div>
-            <div class="delete-step-content">
-              <h4>Find "Calendar Sync"</h4>
-              <p>In Settings, scroll to the "Integrations" or "Calendar" section and tap "Google Calendar Sync".</p>
-            </div>
-          </div>
-          <div class="delete-step">
-            <div class="delete-step-num">3</div>
-            <div class="delete-step-content">
-              <h4>Tap "Connect Google Calendar"</h4>
-              <p>Tap the connect button. A Google account selector will appear, followed by a permissions screen.</p>
-            </div>
-          </div>
-          <div class="delete-step">
-            <div class="delete-step-num">4</div>
-            <div class="delete-step-content">
-              <h4>Grant calendar read access</h4>
-              <p>Review the permission — Noted only requests read-only access to view your calendar events. Tap "Allow" to proceed.</p>
-            </div>
-          </div>
-          <div class="delete-step">
-            <div class="delete-step-num">5</div>
-            <div class="delete-step-content">
-              <h4>View your calendar in the Timeline</h4>
-              <p>Return to the home screen and open the Timeline view. Your Google Calendar events will now appear alongside your tasks.</p>
-            </div>
-          </div>
-        </div>
-        <div class="alert alert-info" style="margin-top:20px;">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          <span><strong>To disconnect:</strong> Go to Settings → Calendar Sync → Disconnect, or visit <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">myaccount.google.com/permissions</a> and remove Noted's access.</span>
-        </div>
+        ... (full section preserved above in git history)
       </div>
+      END HIDDEN: Google Calendar Sync guide -->
 
       <!-- Notifications -->
       <div class="card mb-24 fade-in" id="how-notifications" style="padding:36px;">
@@ -433,13 +381,7 @@
           <div class="faq-answer"><div class="faq-answer-inner">This is usually caused by one of three things: (1) Notification permission is disabled — go to Android Settings → Apps → Noted → Notifications and enable them. (2) Battery optimization is restricting Noted — go to Settings → Battery → Battery Optimization → Noted → "Don't Optimize". (3) On Android 12+, you may need to grant the "Schedule Exact Alarms" permission. Go to Settings → Apps → Noted → Permissions and enable it.</div></div>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span class="faq-question-text">My Google Calendar events aren't showing up. What should I do?</span>
-            <div class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8" stroke-linecap="round"/></svg></div>
-          </button>
-          <div class="faq-answer"><div class="faq-answer-inner">First, ensure you've enabled Calendar Sync in Noted Settings and granted the calendar read permission when prompted. If events still don't show, try: (1) Pull down to refresh the Timeline view. (2) Go to Settings → Calendar Sync → Disconnect, then reconnect. (3) Check that your device has an active internet connection. (4) Verify at myaccount.google.com/permissions that Noted has calendar access. Contact support if the issue persists.</div></div>
-        </div>
+        <!-- HIDDEN: Google Calendar FAQ — restore when feature is publicly available -->
 
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
@@ -524,7 +466,7 @@
           <div class="footer-logo-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7 7h10M7 11h6M7 15h4"/></svg></div>
           <span class="footer-brand-name">Noted</span>
         </div>
-        <p>An all-in-one day planner for Android. Tasks, Notes, Smart Lists, Calendar Sync, and more.</p>
+        <p>An all-in-one day planner for Android. Tasks, Notes, Smart Lists, Reminders, and more.</p>
         <div class="footer-tagline">Plan today. Achieve tomorrow.</div>
       </div>
       <div class="footer-col">
