@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="kivEXV7plf2TeI4MAMBoyVJ9rOgd-6QzUGLVrRalGFM" />
+  <title>Noted - Day Planner | Plan Today. Achieve Tomorrow.</title>
+  <meta name="description" content="Noted is an all-in-one day planner for Android. Manage tasks, notes, smart lists, calendar sync, and recurring reminders — all from one beautiful app. Download free on Google Play." />
+  <meta name="keywords" content="day planner app, productivity app, task manager, google calendar sync, notes app, android planner, todo list, recurring reminders" />
+  <meta name="author" content="Holokraft Consulting Services (OPC) Pvt Ltd" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://the-noted.in" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://the-noted.in" />
+  <meta property="og:title" content="Noted - Day Planner | Plan Today. Achieve Tomorrow." />
+  <meta property="og:description" content="Noted is an all-in-one productivity app for Android. Tasks, Notes, Smart Lists, Google Calendar Sync, Timeline Planner, and more — all secured with cloud sync." />
+  <meta property="og:image" content="https://the-noted.in/assets/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Noted - Day Planner" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Noted - Day Planner | Plan Today. Achieve Tomorrow." />
+  <meta name="twitter:description" content="All-in-one productivity app for Android. Manage your day with Tasks, Notes, Smart Lists, Calendar Sync, and more." />
+  <meta name="twitter:image" content="https://the-noted.in/assets/images/og-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="alternate icon" href="assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Noted - Day Planner",
+    "description": "All-in-one productivity app for Android. Manage tasks, notes, smart lists, calendar sync, and recurring reminders.",
+    "operatingSystem": "Android",
+    "applicationCategory": "ProductivityApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "author": {
+      "@type": "Organization",
+      "name": "Holokraft Consulting Services (OPC) Pvt Ltd",
+      "url": "https://the-noted.in"
+    },
+    "url": "https://play.google.com/store/apps/details?id=com.holokraftinc.noted"
+  }
+  </script>
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader" aria-hidden="true">
+  <div class="preloader-icon">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+  </div>
+</div>
+
+<!-- ── Navigation ─────────────────────────────────────── -->
+<header>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container navbar-inner">
+      <a href="index.html" class="nav-brand" aria-label="Noted Home">
+        <div class="nav-logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4M7 7h10M7 11h6M7 15h4"/></svg>
+        </div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Noted</span>
+          <span class="nav-brand-tagline">Plan today. Achieve tomorrow.</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="support.html" class="nav-link">Support</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="https://the-noted.in/app/" class="btn btn-ghost btn-sm" aria-label="Login to Noted Web App">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
+          Login
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.holokraftinc.noted" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" aria-label="Download on Google Play">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3l14 9-14 9V3z"/></svg>
+          Get the App
+        </a>
+      </div>
+
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" role="menu">
+    <a href="index.html" class="nav-link active" role="menuitem">Home</a>
+    <a href="#features" class="nav-link" role="menuitem">Features</a>
+    <a href="about.html" class="nav-link" role="menuitem">About</a>
+    <a href="support.html" class="nav-link" role="menuitem">Support</a>
+    <a href="contact.html" class="nav-link" role="menuitem">Contact</a>
+    <a href="privacy.html" class="nav-link" role="menuitem">Privacy Policy</a>
+    <div class="mobile-menu-cta">
+      <a href="https://the-noted.in/app/" class="btn btn-outline" style="width:100%;justify-content:center;margin-bottom:8px;">Login to Web App</a>
+      <a href="https://play.google.com/store/apps/details?id=com.holokraftinc.noted" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="width:100%;justify-content:center;">Download on Google Play</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ── Hero Section ───────────────────────────────────── -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          Now Available on Google Play
+        </div>
+
+        <h1 class="hero-title" id="hero-heading">
+          <span style="font-size:clamp(1rem,2.5vw,1.3rem);font-weight:700;color:var(--primary);letter-spacing:-0.01em;display:block;margin-bottom:8px;">Noted - Day Planner</span>
+          Plan Today.<br/>
+          <span class="highlight">Achieve Tomorrow.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Noted is your all-in-one productivity companion. Manage tasks, notes, smart lists, and your calendar — all beautifully unified, synced securely to the cloud.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.holokraftinc.noted" class="play-badge" target="_blank" rel="noopener noreferrer" aria-label="Get Noted on Google Play">
+            <svg class="play-badge-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" aria-hidden="true"><path d="M5 3l14 9-14 9V3z" fill="white" stroke="none"/></svg>
+            <div class="play-badge-text">
+              <span class="play-badge-sub">Download Free on</span>
+              <span class="play-badge-name">Google Play</span>
+            </div>
+          </a>
+          <a href="https://the-noted.in/app/" class="btn btn-outline btn-lg" aria-label="Login to Noted Web App">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
+            Use on Web
+          </a>
+        </div>
+
+        <div class="hero-stats" role="list">
+          <div class="hero-stat" role="listitem">
+            <span class="hero-stat-value">10+</span>
+            <span class="hero-stat-label">Core Features</span>
+          </div>
+          <div class="hero-stat" role="listitem">
+            <span class="hero-stat-value">100%</span>
+            <span class="hero-stat-label">Free to Download</span>
+          </div>
+          <div class="hero-stat" role="listitem">
+            <span class="hero-stat-value">Offline</span>
+            <span class="hero-stat-label">Works Without Internet</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone Mockup -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-phone-wrapper">
+          <div class="hero-phone-glow"></div>
+          <div class="hero-phone">
+            <div class="phone-mockup">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="phone-app-bar">
+                  <div class="phone-app-bar-title">Monday, June 30</div>
+                  <div class="phone-app-bar-date">3 tasks remaining</div>
+                </div>
+                <div class="phone-content">
+                  <div class="phone-timeline-label">Today's Tasks</div>
+                  <div class="phone-task">
+                    <div class="phone-task-check done"></div>
+                    <span class="phone-task-text done">Morning standup</span>
+                  </div>
+                  <div class="phone-task">
+                    <div class="phone-task-check todo"></div>
+                    <span class="phone-task-text">Review design spec</span>
+                  </div>
+                  <div class="phone-task">
+                    <div class="phone-task-check todo"></div>
+                    <span class="phone-task-text">Team sync at 3 PM</span>
+                  </div>
+
+                  <div class="phone-timeline-label" style="margin-top:6px;">Timeline</div>
+                  <div class="phone-time-slot">
+                    <span class="phone-time">9 AM</span>
+                    <div class="phone-event">
+                      <div class="phone-event-title">Deep Work Block</div>
+                    </div>
+                  </div>
+                  <div class="phone-time-slot">
+                    <span class="phone-time">2 PM</span>
+                    <div class="phone-event">
+                      <div class="phone-event-title">Calendar: Sprint Review</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Cards -->
+          <div class="floating-card floating-card-1">
+            <div class="fc-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <div class="fc-label">Tasks Today</div>
+              <div class="fc-value">4 / 7 Done</div>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-2">
+            <div class="fc-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div>
+              <div class="fc-label">Calendar Synced</div>
+              <div class="fc-value">3 Events</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Features Overview ──────────────────────────────── -->
+<section class="section-pad bg-white" id="features" aria-labelledby="features-heading">
+  <div class="container">
+    <div class="section-header centered fade-in">
+      <div class="section-label">Everything You Need</div>
+      <h2 class="section-title" id="features-heading">One App. Complete Control.</h2>
+      <p class="section-subtitle">Noted brings together every productivity tool you need into a single, beautiful, and fast Android application.</p>
+    </div>
+
+    <div class="features-grid">
+      <!-- Feature 1 -->
+      <article class="feature-card fade-in fade-in-delay-1">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+        </div>
+        <h4>Smart Tasks</h4>
+        <p>Create, organize, and complete tasks with priority levels, due dates, and recurring schedules. Track your progress with ease.</p>
+      </article>
+
+      <!-- Feature 2 -->
+      <article class="feature-card fade-in fade-in-delay-2">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        </div>
+        <h4>Rich Notes</h4>
+        <p>Capture ideas, meeting notes, and thoughts with a clean writing experience. Notes are synced securely across all your devices.</p>
+      </article>
+
+      <!-- Feature 3 -->
+      <article class="feature-card fade-in fade-in-delay-3">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h4>Google Calendar Sync</h4>
+        <p>View your Google Calendar events directly alongside your tasks and timeline. Never miss a meeting or appointment again.</p>
+      </article>
+
+      <!-- Feature 4 -->
+      <article class="feature-card fade-in fade-in-delay-1">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h4>Timeline Planner</h4>
+        <p>Visualize your day with a beautiful timeline view. See tasks and calendar events laid out hour-by-hour for perfect planning.</p>
+      </article>
+
+      <!-- Feature 5 -->
+      <article class="feature-card fade-in fade-in-delay-2">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        </div>
+        <h4>Smart Lists</h4>
+        <p>Organize anything — grocery lists, project checklists, reading lists — with intelligent smart lists that adapt to your workflow.</p>
+      </article>
+
+      <!-- Feature 6 -->
+      <article class="feature-card fade-in fade-in-delay-3">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+        </div>
+        <h4>Recurring Reminders</h4>
+        <p>Set reminders that repeat daily, weekly, or monthly. Stay on top of habits, routines, and important recurring commitments.</p>
+      </article>
+
+      <!-- Feature 7 -->
+      <article class="feature-card fade-in fade-in-delay-1">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <h4>Smart Inbox</h4>
+        <p>Capture anything quickly through the Smart Inbox — an always-accessible inbox to dump ideas before organizing them later.</p>
+      </article>
+
+      <!-- Feature 8 -->
+      <article class="feature-card fade-in fade-in-delay-2">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h4>Cloud Sync & Security</h4>
+        <p>All your data is encrypted and stored securely via Supabase. Sync seamlessly across devices with real-time cloud backup.</p>
+      </article>
+
+      <!-- Feature 9 -->
+      <article class="feature-card fade-in fade-in-delay-3">
+        <div class="feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+        </div>
+        <h4>Offline Support</h4>
+        <p>Noted works perfectly without an internet connection. All your data is available offline and syncs automatically when you reconnect.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── Why Choose Noted ───────────────────────────────── -->
+<section class="why-choose" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="section-header centered fade-in" style="position:relative;z-index:1;">
+      <div class="section-label">Why Noted?</div>
+      <h2 class="section-title" id="why-heading">Built Different. Built for You.</h2>
+      <p class="section-subtitle">Noted is designed with one goal: to reduce the cognitive load of managing your day so you can focus on what actually matters.</p>
+    </div>
+
+    <div class="grid-3" style="position:relative;z-index:1;">
+      <div class="why-card fade-in fade-in-delay-1">
+        <div class="why-card-icon" aria-hidden="true">🎯</div>
+        <h4>All-In-One</h4>
+        <p>Stop juggling five different apps. Noted replaces your task manager, notes app, reminder app, and calendar viewer with one unified experience.</p>
+      </div>
+      <div class="why-card fade-in fade-in-delay-2">
+        <div class="why-card-icon" aria-hidden="true">🔒</div>
+        <h4>Privacy First</h4>
+        <p>Your data is yours. Every piece of information is encrypted and stored in your own user-specific secure storage. No data sharing, ever.</p>
+      </div>
+      <div class="why-card fade-in fade-in-delay-3">
+        <div class="why-card-icon" aria-hidden="true">⚡</div>
+        <h4>Blazing Fast</h4>
+        <p>Noted is built for performance. Open the app instantly, add tasks in seconds, and get notifications on time — every time.</p>
+      </div>
+      <div class="why-card fade-in fade-in-delay-1">
+        <div class="why-card-icon" aria-hidden="true">☁️</div>
+        <h4>Cross-Device Sync</h4>
+        <p>Start on your phone, continue on your tablet. Real-time cloud sync means your data is always up-to-date across every device you own.</p>
+      </div>
+      <div class="why-card fade-in fade-in-delay-2">
+        <div class="why-card-icon" aria-hidden="true">📴</div>
+        <h4>Works Offline</h4>
+        <p>No internet? No problem. Noted stores your data locally and syncs seamlessly when you're back online. Productivity without limits.</p>
+      </div>
+      <div class="why-card fade-in fade-in-delay-3">
+        <div class="why-card-icon" aria-hidden="true">🌱</div>
+        <h4>Always Improving</h4>
+        <p>Regular updates bring new features — AI assistant, team collaboration, and more coming soon. Noted grows with your needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── App Screenshots ─────────────────────────────────── -->
+<section class="screenshots-section" aria-labelledby="screenshots-heading">
+  <div class="container">
+    <div class="section-header centered fade-in">
+      <div class="section-label">App Preview</div>
+      <h2 class="section-title" id="screenshots-heading">See Noted in Action</h2>
+      <p class="section-subtitle">A beautiful interface designed for clarity, speed, and focus. Available exclusively on Android.</p>
+    </div>
+  </div>
+  <div class="screenshots-scroll" role="list" aria-label="App screenshots">
+    <div class="screenshot-item" role="listitem">
+      <img src="assets/images/screenshots/timeline.png" alt="Noted Timeline View showing daily schedule and tasks" loading="lazy" />
+    </div>
+    <div class="screenshot-item" role="listitem">
+      <img src="assets/images/screenshots/inbox.png" alt="Noted Inbox showing task list with priority and schedule" loading="lazy" />
+    </div>
+    <div class="screenshot-item" role="listitem">
+      <img src="assets/images/screenshots/notes.png" alt="Noted Notes screen showing team memo" loading="lazy" />
+    </div>
+    <div class="screenshot-item" role="listitem">
+      <img src="assets/images/screenshots/lists.png" alt="Noted Smart Lists showing Today, Upcoming, Overdue and Completed" loading="lazy" />
+    </div>
+    <div class="screenshot-item" role="listitem">
+      <img src="assets/images/screenshots/shopping.png" alt="Noted Shopping List with items" loading="lazy" />
+    </div>
+    <div class="screenshot-item" role="listitem">
+      <img src="assets/images/screenshots/create-task.png" alt="Noted Create Task screen with priority and schedule options" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- ── Timeline Planner Spotlight ────────────────────────── -->
+<section class="section-pad" id="timeline" aria-labelledby="timeline-heading">
+  <div class="container">
+    <div class="feature-spotlight">
+      <div class="feature-spot-content fade-in">
+        <div class="section-label">Timeline Planner</div>
+        <h3 id="timeline-heading">See Your Entire Day at a Glance</h3>
+        <p>The Timeline Planner gives you a scrollable, hour-by-hour view of your tasks and calendar events. Understand exactly how your day is structured, identify gaps, and plan smarter.</p>
+        <ul class="feature-list">
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Hourly time-slot visualization
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Tasks and calendar events in one view
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Drag to reschedule tasks
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Meeting reminders with lead time
+          </li>
+        </ul>
+      </div>
+      <div class="feature-spot-visual fade-in">
+        <div class="feature-spot-image" aria-label="Timeline planner screenshot placeholder">
+          <div style="text-align:center;color:var(--text-light);padding:24px;">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <p style="margin-top:12px;font-size:0.85rem;font-weight:500;">Timeline View Screenshot</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Calendar Sync -->
+    <div class="feature-spotlight reverse" id="calendar" aria-labelledby="calendar-heading">
+      <div class="feature-spot-content fade-in">
+        <div class="section-label">Google Calendar</div>
+        <h3 id="calendar-heading">Your Calendar, Right Inside Noted</h3>
+        <p>Connect your Google Calendar account and see all your events alongside your tasks. Noted reads your calendar securely and displays events in the timeline — so you always know what's coming next.</p>
+        <ul class="feature-list">
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            One-tap Google Calendar sign-in
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Read-only access — your events are never modified
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Meeting reminders before every event
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Automatic refresh to stay current
+          </li>
+        </ul>
+      </div>
+      <div class="feature-spot-visual fade-in">
+        <div class="feature-spot-image" aria-label="Google Calendar sync screenshot placeholder">
+          <div style="text-align:center;color:var(--text-light);padding:24px;">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg>
+            <p style="margin-top:12px;font-size:0.85rem;font-weight:500;">Calendar Sync Screenshot</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notes -->
+    <div class="feature-spotlight" id="notes" aria-labelledby="notes-heading">
+      <div class="feature-spot-content fade-in">
+        <div class="section-label">Notes</div>
+        <h3 id="notes-heading">Capture Ideas the Moment They Strike</h3>
+        <p>A fast, distraction-free notes experience that gets out of your way. Write meeting summaries, draft plans, or jot down thoughts — all secured and synced to the cloud instantly.</p>
+        <ul class="feature-list">
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Clean, distraction-free writing experience
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Instant cloud backup
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Search across all your notes
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Offline access always available
+          </li>
+        </ul>
+      </div>
+      <div class="feature-spot-visual fade-in">
+        <div class="feature-spot-image" aria-label="Notes feature screenshot placeholder">
+          <div style="text-align:center;color:var(--text-light);padding:24px;">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            <p style="margin-top:12px;font-size:0.85rem;font-weight:500;">Notes Screenshot</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Smart Lists -->
+    <div class="feature-spotlight reverse" id="lists" aria-labelledby="lists-heading">
+      <div class="feature-spot-content fade-in">
+        <div class="section-label">Smart Lists</div>
+        <h3 id="lists-heading">Organized Lists for Every Part of Your Life</h3>
+        <p>Create smart lists for groceries, projects, travel packing, books to read, or any category you can think of. Checklist support lets you tick items off as you go.</p>
+        <ul class="feature-list">
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Unlimited lists and list items
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Built-in checklist support
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Reorder and reorganize instantly
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Share lists with others (coming soon)
+          </li>
+        </ul>
+      </div>
+      <div class="feature-spot-visual fade-in">
+        <div class="feature-spot-image" aria-label="Smart lists screenshot placeholder">
+          <div style="text-align:center;color:var(--text-light);padding:24px;">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+            <p style="margin-top:12px;font-size:0.85rem;font-weight:500;">Smart Lists Screenshot</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recurring Reminders -->
+    <div class="feature-spotlight" id="reminders" aria-labelledby="reminders-heading">
+      <div class="feature-spot-content fade-in">
+        <div class="section-label">Recurring Reminders</div>
+        <h3 id="reminders-heading">Never Miss What Matters, Ever Again</h3>
+        <p>Set up recurring reminders for habits, medications, weekly reviews, or any routine task. Noted sends local notifications right on time — no internet required.</p>
+        <ul class="feature-list">
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Daily, weekly, and monthly recurrence
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Local notifications — works offline
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Custom reminder lead time
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Snooze and dismiss controls
+          </li>
+        </ul>
+      </div>
+      <div class="feature-spot-visual fade-in">
+        <div class="feature-spot-image" aria-label="Reminders feature screenshot placeholder">
+          <div style="text-align:center;color:var(--text-light);padding:24px;">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+            <p style="margin-top:12px;font-size:0.85rem;font-weight:500;">Reminders Screenshot</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cloud Sync & Security -->
+    <div class="feature-spotlight reverse" id="security" aria-labelledby="security-heading">
+      <div class="feature-spot-content fade-in">
+        <div class="section-label">Cloud Sync &amp; Security</div>
+        <h3 id="security-heading">Your Data is Secure. Always.</h3>
+        <p>Noted uses Supabase for secure, encrypted cloud storage. Your data is isolated to your account, backed up in real time, and accessible across all your Android devices.</p>
+        <ul class="feature-list">
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            End-to-end encrypted data storage
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            User-specific row-level security
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Google Sign-In with OAuth 2.0
+          </li>
+          <li class="feature-list-item">
+            <span class="check" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Real-time cross-device sync
+          </li>
+        </ul>
+      </div>
+      <div class="feature-spot-visual fade-in">
+        <div class="feature-spot-image" aria-label="Cloud sync and security screenshot placeholder">
+          <div style="text-align:center;color:var(--text-light);padding:24px;">
+            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <p style="margin-top:12px;font-size:0.85rem;font-weight:500;">Security Overview Screenshot</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Coming Soon ────────────────────────────────────── -->
+<section class="section-pad bg-secondary" aria-labelledby="coming-heading">
+  <div class="container">
+    <div class="section-header centered fade-in">
+      <div class="section-label">What's Next</div>
+      <h2 class="section-title" id="coming-heading">The Future of Noted</h2>
+      <p class="section-subtitle">We're constantly building to make Noted more powerful. Here's a preview of what's coming to your productivity toolkit.</p>
+    </div>
+    <div class="grid-4 fade-in">
+      <div class="card card-sm" style="text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;" aria-hidden="true">🤖</div>
+        <h4 style="margin-bottom:8px;">AI Assistant</h4>
+        <p style="font-size:0.85rem;color:var(--text-muted);">Smart scheduling and productivity suggestions powered by AI.</p>
+        <span class="badge badge-primary mt-12">Coming Soon</span>
+      </div>
+      <div class="card card-sm" style="text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;" aria-hidden="true">👥</div>
+        <h4 style="margin-bottom:8px;">Team Collaboration</h4>
+        <p style="font-size:0.85rem;color:var(--text-muted);">Share tasks, notes, and lists with your team in real time.</p>
+        <span class="badge badge-primary mt-12">Coming Soon</span>
+      </div>
+      <div class="card card-sm" style="text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;" aria-hidden="true">🌐</div>
+        <h4 style="margin-bottom:8px;">Web Version</h4>
+        <p style="font-size:0.85rem;color:var(--text-muted);">Access Noted from any browser. Same power, same sync.</p>
+        <span class="badge badge-primary mt-12">In Development</span>
+      </div>
+      <div class="card card-sm" style="text-align:center;">
+        <div style="font-size:2rem;margin-bottom:12px;" aria-hidden="true">🍎</div>
+        <h4 style="margin-bottom:8px;">iOS Version</h4>
+        <p style="font-size:0.85rem;color:var(--text-muted);">Bringing the full Noted experience to iPhone and iPad.</p>
+        <span class="badge badge-primary mt-12">Planned</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ────────────────────────────────────────────── -->
+<section class="section-pad" id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="section-header centered fade-in">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Everything you need to know about Noted. Can't find your answer? <a href="contact.html">Contact us</a>.</p>
+    </div>
+
+    <div class="faq-list fade-in">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">Is Noted free to download?</span>
+          <div class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8" stroke-linecap="round"/></svg></div>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, Noted is completely free to download on Google Play. All core features — tasks, notes, smart lists, reminders, Google Calendar sync, and cloud sync — are available at no cost. We may introduce optional premium features in the future, but the core experience will always remain free.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">Do I need a Google account to use Noted?</span>
+          <div class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8" stroke-linecap="round"/></svg></div>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, Noted uses Google Sign-In for authentication. This lets us securely identify you and associate your data with your account for cloud sync. We only access your basic profile information (name and email) and, only if you choose, your Google Calendar data for event display.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">Can Noted modify my Google Calendar events?</span>
+          <div class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8" stroke-linecap="round"/></svg></div>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">No. Noted only reads your Google Calendar events to display them inside the app alongside your tasks and timeline. We never create, edit, delete, or modify any of your Google Calendar events. Your calendar data is read-only within Noted.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">Does Noted work offline?</span>
+          <div class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8" stroke-linecap="round"/></svg></div>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes! Noted stores your tasks, notes, and lists locally on your device. You can create, view, and edit all your data without an internet connection. When you reconnect to the internet, Noted automatically syncs your changes to the cloud, keeping everything up to date across your devices.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">How is my data protected?</span>
+          <div class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8" stroke-linecap="round"/></svg></div>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Your data is stored securely using Supabase, which uses row-level security to ensure only you can access your own data. All data is transmitted over encrypted HTTPS connections, and your account is protected by Google's OAuth 2.0 authentication — one of the industry's most secure authentication standards.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">How do I enable notifications for reminders?</span>
+          <div class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8" stroke-linecap="round"/></svg></div>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">When you first set a reminder, Noted will ask for notification permission on Android. Grant the permission to receive on-time alerts. You can also go to your Android Settings → Apps → Noted → Notifications and enable them manually. Reminders work using local notifications, so they fire even without an internet connection.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">Can I delete my account and data?</span>
+          <div class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8" stroke-linecap="round"/></svg></div>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, absolutely. You can delete your account directly from within the Noted app under Settings → Account → Delete Account. You can also visit our <a href="delete-account.html">Account Deletion page</a> for detailed instructions. All your personal data — tasks, notes, lists, and reminders — will be permanently removed within 30 days of your deletion request.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-question-text">Is Noted available on iOS or as a web app?</span>
+          <div class="faq-icon" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M6 2v8M2 6h8" stroke-linecap="round"/></svg></div>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">Currently, Noted is available exclusively on Android. We are actively developing a web version and an iOS app. These will be announced on this website and through the Google Play listing. Sign up for updates or follow us on GitHub to stay informed about upcoming releases.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── About Holokraft ─────────────────────────────────── -->
+<section class="section-pad bg-secondary" aria-labelledby="about-section-heading">
+  <div class="container">
+    <div class="grid-2 fade-in" style="align-items:center;gap:80px;">
+      <div>
+        <div class="section-label">About the Developer</div>
+        <h2 id="about-section-heading" style="margin-bottom:16px;">Built by Holokraft Apps</h2>
+        <p style="margin-bottom:16px;">Holokraft Consulting Services (OPC) Pvt Ltd is a product-focused technology company passionate about building software that genuinely improves how people work and live.</p>
+        <p style="margin-bottom:24px;">We believe productivity tools should be simple, fast, and beautiful. Noted was built out of our own frustration with fragmented apps — and our conviction that one well-designed app can do everything you need.</p>
+        <a href="about.html" class="btn btn-outline">Learn About Us</a>
+      </div>
+      <div>
+        <div class="card" style="text-align:center;padding:40px;">
+          <div style="font-size:3.5rem;margin-bottom:20px;" aria-hidden="true">✦</div>
+          <h3 style="margin-bottom:8px;font-size:1.4rem;">Holokraft Apps</h3>
+          <p style="color:var(--text-muted);font-style:italic;margin-bottom:24px;">"Simplicity is the ultimate sophistication."</p>
+          <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+            <div style="text-align:center;">
+              <div style="font-size:1.4rem;font-weight:800;color:var(--primary);">2024</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Founded</div>
+            </div>
+            <div style="width:1px;background:var(--border);"></div>
+            <div style="text-align:center;">
+              <div style="font-size:1.4rem;font-weight:800;color:var(--primary);">India</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Headquarters</div>
+            </div>
+            <div style="width:1px;background:var(--border);"></div>
+            <div style="text-align:center;">
+              <div style="font-size:1.4rem;font-weight:800;color:var(--primary);">Android</div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Platform</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA Banner ──────────────────────────────────────── -->
+<section class="cta-banner" aria-labelledby="cta-heading">
+  <div class="container">
+    <h2 id="cta-heading" class="fade-in">Ready to take control of your day?</h2>
+    <p class="fade-in">Join thousands of people who plan smarter with Noted. Free to download. No credit card required.</p>
+    <div class="cta-actions fade-in">
+      <a href="https://play.google.com/store/apps/details?id=com.holokraftinc.noted" class="play-badge" target="_blank" rel="noopener noreferrer" aria-label="Download Noted on Google Play">
+        <svg class="play-badge-icon" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M5 3l14 9-14 9V3z"/></svg>
+        <div class="play-badge-text">
+          <span class="play-badge-sub">Download Free on</span>
+          <span class="play-badge-name">Google Play</span>
+        </div>
+      </a>
+      <a href="support.html" class="btn btn-white btn-lg">View Support</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ── Footer ─────────────────────────────────────────── -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4M7 7h10M7 11h6M7 15h4"/></svg>
+          </div>
+          <span class="footer-brand-name">Noted</span>
+        </div>
+        <p>An all-in-one day planner for Android. Tasks, Notes, Smart Lists, Calendar Sync, and more — all in one beautiful app.</p>
+        <div class="footer-tagline">Plan today. Achieve tomorrow.</div>
+      </div>
+
+      <div class="footer-col">
+        <h5>App</h5>
+        <nav class="footer-links" aria-label="App navigation">
+          <a href="index.html">Home</a>
+          <a href="#features">Features</a>
+          <a href="#timeline">Timeline Planner</a>
+          <a href="#calendar">Calendar Sync</a>
+          <a href="https://play.google.com/store/apps/details?id=com.holokraftinc.noted" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://the-noted.in/app/">Login / Web App</a>
+        </nav>
+      </div>
+
+      <div class="footer-col">
+        <h5>Company</h5>
+        <nav class="footer-links" aria-label="Company navigation">
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="support.html">Support</a>
+          <a href="https://github.com/holokraftinc" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </div>
+
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <nav class="footer-links" aria-label="Legal navigation">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="delete-account.html">Delete Account</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2024–2025 Holokraft Consulting Services (OPC) Pvt Ltd. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="delete-account.html">Delete Account</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top -->
+<button class="scroll-top" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>

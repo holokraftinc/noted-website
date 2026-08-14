@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Noted - Day Planner</title>
+  <script>
+    // SPA redirect: any /app/* path → store full URL, load /app/ (Flutter handles routing)
+    // Any other 404 → redirect to landing home
+    var path = window.location.pathname;
+    if (path.startsWith('/app')) {
+      sessionStorage.setItem('spa_redirect', window.location.href);
+      window.location.replace('/app/');
+    } else {
+      window.location.replace('/');
+    }
+  </script>
+</head>
+<body></body>
+</html>

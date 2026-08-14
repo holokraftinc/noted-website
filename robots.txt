@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://holokraftinc.github.io/noted/sitemap.xml

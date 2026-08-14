@@ -1,0 +1,69 @@
+name: Deploy to the-noted.in
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout landing website
+        uses: actions/checkout@v4
+        with:
+          path: landing
+
+      - name: Checkout Flutter web app source
+        uses: actions/checkout@v4
+        with:
+          repository: holokraftinc/noted-web
+          path: flutter-source
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.0'
+          channel: stable
+          cache: true
+
+      - name: Build Flutter web app
+        working-directory: flutter-source
+        run: |
+          flutter pub get
+          flutter build web --release --base-href /app/
+
+      - name: Assemble deployment folder
+        run: |
+          mkdir -p deploy
+          # Landing website at root
+          cp -r landing/. deploy/
+          # Remove source-only files from deploy
+          rm -rf deploy/.github deploy/.claude deploy/README.md
+          # Flutter app at /app/
+          mkdir -p deploy/app
+          cp -r flutter-source/build/web/. deploy/app/
+          # CNAME must be at root
+          echo "the-noted.in" > deploy/CNAME
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: deploy
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        id: deployment
